@@ -78,36 +78,64 @@ const IndexPage = () => (
           explanation: "This is explanation"
         }}
       />
-      {/* <Box
+      <Box
         title="Direct"
         copy="Speak directly to the person who is making someone uncomfortable. Approach them calmly with a smile and positive attitude. Consider statements such as “Hey, I know you want everyone to have a good time tonight, but I think you are making someone uncomfortable, and should give more space on the dancefloor.” Always state the behaviour that needs to change, and what outcome you want to see. "
         bgcolor="#b0f97f"
         icon={direct}
         question="A friend of yours is being chat up by a stranger. You take a break and go to the bathroom, and when you come back out your friend is targeted again. What should you do?" 
-        A1="give your friend some space to figure out the situation"
-        A2="take your friend and leave the bar"
-        A3="approach the aggressor with a smile and a friendly attitude and say “Hey! I’m sure you don’t mean to get in the way but I’m visiting my friend right now and we’d like to go dance now”"
+        A1={{
+        answer: "give your friend some space to figure out the situation",
+        explanation: "This is explanation"
+        }}
+        A2={{ 
+        answer: "take your friend and leave the bar",
+        explanation: "This is explanation"
+        }}
+        A3={{
+        answer: "approach the aggressor with a smile and a friendly attitude and say “Hey! I’m sure you don’t mean to get in the way but I’m visiting my friend right now and we’d like to go dance now.”",
+        explanation: "This is explanation"
+        }}
       />
+      
       <Box
         title="Delegate"
         copy="Ask for help. Consider contacting a member of security or staff, telling them about the behaviour and asking for them to talk directly to the perpetrator, or to watch them from now on. Consider phrase “Hello! This person is being harassed. Can you help?” "
         bgcolor="#c6a2e5"
         icon={delegate}
         question="You see someone aggressively shoving a person at the bar. You hear their voices start to raise. What do you do? "
-        A1="wait to see if the situation escalates"
-        A2="approach them and ask them to stop"
-        A3="go to security and say “someone is getting agressive on the dancefloor. Please can you go check-up on them?”"
-      />
+        A1={{
+        answer: "wait to see if the situation escalates",
+        explanation: "This is explanation"
+        }}
+        A2={{
+        answer: "approach them and ask them to stop",
+        explanation: "This is explanation"
+        }}
+        A3={{
+          answer: "go to security and say “someone is getting agressive on the dancefloor. Please can you go check-up on them?”",
+          explanation: "This is explanation"
+        }}/>
+
       <Box
         title="Delay"
         copy="Wait until an appropriate time to make an intervention. If someone is giving you a bad vibe but you are not sure that they are bothering anyone, consider delaying an intervention until you can do a check-in with someone they target, or after you’ve observed their behaviour for a little while and observe them harassing someone. Remember though that harassment can often happen fast! Don’t delay checking in with someone who you think may need help."
         bgcolor="#91ecff"
         icon={delay}
         question="You see someone who you think might be uncomfortable. You check-in with them and they say they’re fine. What do you do?"
-        A1="Delay and watch the situation, to confirm that you should check-in again later"
-        A2="Talk to the aggressor and tell him to leave the target alone"
-        A3="Ignore the Situation"
-      /> */}
+        A1={{
+        answer: "Delay and watch the situation, to confirm that you should check-in again later",
+        explanation: "This is explanation"
+        }}
+        A2={{
+        answer: "Talk to the aggressor and tell him to leave the target alone",
+        explanation: "This is explanation"
+        }}
+        A3={{
+        answer: "Ignore the Situation",
+        explanation: "This is explanation"
+        }}
+      /> 
     </div>
   </Layout>
 
