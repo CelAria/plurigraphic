@@ -37,6 +37,9 @@ h1 {
       margin-bottom: 1em;
       font-style: italic;
       display: none;
+      &.isTrue {
+        background: green;
+      }
     }
   }
 }
