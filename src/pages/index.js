@@ -50,8 +50,11 @@ const Box = ({ title, copy, bgcolor, icon, question, A1, A2, A3 }) => (
 const IndexPage = () => (
   <Layout> 
     <header>
-      <h1>Bystander Intevertion Strategies</h1>
-      <p>This is a description</p>
+      <h1>Bystander Intervertion for the Dancefloor</h1>
+      <div>
+      <p>What’s worse than being harassed when you’re trying to let loose on the dancefloor? Being harassed when surrounded by a bunch of bystanders who see what’s happening, but do nothing to help. To the surprise of no one, dancefloors- with their dim lights, mood-altering music, and plethora of intoxicants, are often a breeding ground for harassment. We love the magical escape from everyday life that dancefloors provide, but that means adapting our bystander intervention for new social environments. So keep on dancing!</p>
+      <p>Read about different Intervention strategies on the left, and then practise your learning with the Practise Scenarios on the right! </p>    
+    </div>
     </header>
     <div className="boxes-container">
       <Box 
