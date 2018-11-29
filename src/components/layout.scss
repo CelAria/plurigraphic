@@ -1,24 +1,72 @@
 @import '~normalize-css/normalize.css';
+@import url("https://use.typekit.net/nhy3fwl.css");
 
 body {
   margin: 0;
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: itc-avant-garde-gothic-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  border-bottom: 2px solid;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 h1 {
+  text-transform: none;
+  font-size: 3em;
+  border-bottom: none;
+}
 
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  padding: 1em 0;
+  border-bottom: none;
+  font-size: 1.2em;
+}
+
+header {
+  padding: 2em 3em 3em;
 }
 
 .box {
   background: black;
-  padding: 2em;
+  padding: 3em;
   display: flex;
+  min-height: 400px;
   &.red {
     background: red;
   }
   > div {
-    width: 50%;
+    width: 100%;
+    text-align: center;
+    padding-right: 2em;
+  }
+  .text {
+    text-align: left;
+  }
+  .image {
+    max-height: 400px;
+    max-width: 400px;
+    margin: 0 1em;
+    img {
+      max-height: 100%;
+      max-width: 100%;
+    }
   }
   .question {
+    text-align: left;
+    padding-right: 0;
     label {
       width: 100%;
       margin-bottom: 1em;
@@ -32,13 +80,14 @@ h1 {
       }
     }
     .explanation {
-      padding-left: 20px;
+      padding: 20px;
       margin-top: 1em;
       margin-bottom: 1em;
-      font-style: italic;
       display: none;
+      background: #ffffff33;
+      border: 2px solid transparent;
       &.isTrue {
-        background: green;
+        border: 2px solid  green;
       }
     }
   }

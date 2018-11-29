@@ -2,40 +2,32 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import direct from '../images/noun_direction_2020945.png'
-import delegate from '../images/noun_exchange_1995148.png'
-import distract from '../images/noun_up_2020965.png'
-import delay from '../images/noun_Waiting Room_1754105.png'
+import direct from '../images/direct.svg'
+import delegate from '../images/delegate.svg'
+import distract from '../images/distract.svg'
+import delay from '../images/delay.svg'
 
-class Answer extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    const { title, answer, explanation, isTrue } = this.props
-    return (
+const Answer = ({ title, answer, explanation, isTrue }) => (
+  <div>
+    <label className="answer">
+      <input
+        type="radio"
+        name={title}
+        className="answer"
+        value={answer}
+      />
       <div>
-        <label className="answer">
-          <input
-            type="radio"
-            name={title}
-            className="answer"
-            value={answer}
-          />
-          <div>
-            <span>{answer}</span>
-            <div className={`explanation ${isTrue ? 'isTrue' : null}`}>
-              {explanation}
-            </div>
-          </div>
-        </label>
+        <span>{answer}</span>
+        <div className={`explanation ${isTrue ? 'isTrue' : null}`}>
+          {explanation}
+        </div>
       </div>
-    )
-  }
-}
+    </label>
+  </div>
+)
 
 
-const Box = ({title, copy, bgcolor, icon, question, A1, A2, A3}) => (
+const Box = ({ title, copy, bgcolor, icon, question, A1, A2, A3 }) => (
   <div className='box' style={{backgroundColor: bgcolor}}>
     <div className="text">
       <h3>{title}</h3>
@@ -56,8 +48,11 @@ const Box = ({title, copy, bgcolor, icon, question, A1, A2, A3}) => (
 
 
 const IndexPage = () => (
-  <Layout>
-    <h1>Bystander Intevertion Strategies</h1>
+  <Layout> 
+    <header>
+      <h1>Bystander Intevertion Strategies</h1>
+      <p>This is a description</p>
+    </header>
     <div className="boxes-container">
       <Box 
         title="Distract"
